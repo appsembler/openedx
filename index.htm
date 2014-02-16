@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Managed Open edX hosting by Appsembler</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- @todo: fill with your company info or remove -->
+<meta name="description" content="">
+<meta name="author" content="Nate Aune, Appsembler">
+
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Plugins -->
+
+<link href="plugins/animate/animate.css" rel="stylesheet">
+<link href="plugins/flexslider/flexslider.css" rel="stylesheet">
+<link href="plugins/clingify/clingify.css" rel="stylesheet">
+
+<!-- Theme style -->
+<link href="css/theme-style.min.css" rel="stylesheet">
+
+<!--Your custom colour override-->
+<link href="css/colour-blue.css" rel="stylesheet">
+
+<!-- Your custom override -->
+<link href="css/custom-style.css" rel="stylesheet">
+
+<!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+<!--[if lt IE 9]>
+      <script src="plugins/html5shiv/dist/html5shiv.js"></script>
+      <script src="plugins/respond/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+<link rel="shortcut icon" href="img/icons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+<link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Rambla|Calligraffitti' rel='stylesheet' type='text/css'>
+
+<!--Retina.js plugin - @see: http://retinajs.com/-->
+<script src="plugins/retina/js/retina-1.1.0.min.js"></script>
+</head>
+
+<body class="page page-index-static">
+<a href="#content" class="sr-only">Skip to content</a>
+<div id="navigation" class="wrapper">
+  <div class="navbar-static-top"> 
+    
+    <!--Hidden Header Region-->
+    <div class="header-hidden">
+      <div class="header-hidden-inner container">
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <h3>About Appsembler</h3>
+            <p>Bringing the best in open source educational technology to you! We make it easy to get started and provide ongoing support and reliable hosting.</p>
+            <a href="#" class="btn btn-sm btn-primary">Find out more</a> 
+          </div>
+          <div class="col-sm-4 col-md-4"> 
+            <!--@todo: replace with company contact details-->
+            <h3>Contact Us</h3>
+            <address>
+            <p><abbr title="Phone"><i class="fa fa-phone"></i></abbr> 1-(855) 352-6469</p>
+            <p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> info@appsembler.com</p>
+            <p><abbr title="Address"><i class="fa fa-home"></i></abbr> Boston, MA</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Header & Branding region-->
+    <div class="header">
+      <div class="header-inner container">
+        <div class="row">
+          <div class="col-md-8"> 
+            <!--branding/logo--> 
+            <a class="navbar-brand" href="index.htm" title="Home">
+            <h1><span>Open</span> edX<span></span></h1>
+            </a>
+            <div class="slogan">Managed hosting by Appsembler</div>
+          </div>
+          
+          <!--header rightside-->
+          <div class="col-md-4"> 
+            <div id="phone">
+               Give us a call! <i class="fa fa-phone"></i> 1-(855) 352-6469
+            </div>
+          </div>
+        </div>
+        <div id="header-hidden-link"> <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden"><i></i>Open</a> </div>
+      </div>
+    </div>
+    
+    <!--Change order for full width navbar
+  <div class="navbar"> 
+    <div class="container" data-toggle="clingify">-->
+    <div class="container" data-toggle="clingify">
+      <div class="navbar"> 
+        <!--
+      mobile collapse menu button
+      - data-toggle="toggle" = default BS menu
+      - data-toggle="jpanel-menu" = jPanel Menu
+      --> 
+        <a class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </a> 
+        
+        <!--user menu-->
+        <div class="btn-group user-menu pull-right"> <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">FREE Trial</a> </div>
+        
+        <!--everything within this div is collapsed on mobile-->
+        <div class="navbar-collapse collapse"> 
+          
+          <!--main navigation-->
+          <ul class="nav navbar-nav">
+            <li class="home-link"><a href="index.htm"><i class="fa fa-home"></i><span class="hidden">Home</span></a></li>
+            <li><a href="#openedx" class="menu-item">What is Open edX?</a></li>
+            <li><a href="#pricing" class="menu-item">Pricing</a></li>
+            <li><a href="#faq" class="menu-item">FAQ</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" id="about-drop" data-toggle="dropdown">About +</a> 
+              <!-- Dropdown Menu -->
+              <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1" class="menu-item">About Us</a></li>
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1" class="menu-item">Leadership</a></li>
+                <li role="presentation"><a role="menuitem" href="#" tabindex="-1" class="menu-item">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse --> 
+      </div>
+    </div>
+  </div>
+</div>
+<div id="highlighted">
+  <div class="inner"> 
+    <!--Static Banner-->
+    <section class="static-banner container">
+      <div class="slide">
+        <div class="col-md-5"><img src="img/misc/protein-builder.png" alt="Slide 1" class="img-responsive" style="margin-top: 20px;" /></div>
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-6 caption">
+          <h2>Managed &amp; Supported Open edX</h2>
+          <h4>by <a href="http://appsembler.com">Appsembler</a></h4>
+          <p>Finally, a fully managed and supported Open edX.</p>
+          <p>Get started today and leave the worries to us!</p>
+          <a href="#pricing" class="btn btn-lg btn-primary">Buy Now</a> 
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div id="content">
+  <div class="container"> 
+    <!-- Services -->
+    <div class="block features">
+      <h2 class="title-divider"><span>Core <span class="de-em">Features</span></span> <small>Core features included in all plans.</small></h2>
+      <div class="row">
+        <div class="feature col-sm-6 col-md-3"> <img src="img/features/feature-1.png" alt="Feature 1" class="img-responsive" />
+          <h3 class="title">Flexible <span class="de-em">Plans</span></h3>
+          <p>Get started with our affordable Starter plan, and upgrade to our Dedicated plans as your needs grow. Our flexible plans let you only pay for what you need.</p>
+        </div>
+        <div class="feature col-sm-6 col-md-3"> <img src="img/features/feature-2.png" alt="Feature 2" class="img-responsive" />
+          <h3 class="title">24/7 <span class="de-em">Support</span></h3>
+          <p>Got a question? We're here to help! Find quick answers in our knowledge base, or get in touch by email, chat or phone. Rest easy - we've got you covered.</p>
+        </div>
+        <div class="feature col-sm-6 col-md-3"><img src="img/features/feature-3.png" alt="Feature 3" class="img-responsive" /></a>
+          <h3 class="title">Upgrade <span class="de-em">Assistance</span></h3>
+          <p>We can help with upgrades, so you're always running the latest and greatest version of the Open edX software. Avoid the upgrade headaches and leave it to us!</p>
+        </div>
+        <div class="feature col-sm-6 col-md-3"> <img src="img/features/feature-4.png" alt="Feature 4" class="img-responsive" />
+          <h3 class="title">99.9% <span class="de-em">Uptime</span></h3>
+          <p>Our support staff is monitoring the servers around the clock, and alerted as soon as there is a problem so it can be fixed quickly. We guarantee 99.9% uptime or your money back!</p>
+        </div>
+      </div>
+    </div>
+    
+    <!--Pricing Table-->
+    <a name="pricing"></a>
+    <div class="block">
+      <h2 class="title-divider"><span>Pricing <span class="de-em">Plans</span></span> <small>Competitive pricing plans to suit your needs</small></h2>
+      <div class="row pricing-stack">
+        <div class="col-md-3">
+          <div class="well active">
+            <h3 class="title"><span class="em">Shared</span>&nbsp;<span class="fancy">Starter</span></h3>
+            <p class="price"><span class="currency">$ <span class="digits">49</span><span>.95</span> <span class="term">/MO</span></p>
+            <ul class="unstyled points">
+              <li><span class="em">1</span> Course Author Account</li>
+              <li><span class="em">30</span> Student Accounts</li>
+              <li><span class="em">1</span> Course</li>
+              <!-- @todo provide a link to what this theme looks like. -->
+              <li><span class="em">Standard</span> theme <a href="#" title="Use our beautifully designed theme" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <!-- @todo provide a link to these plugins -->
+              <li><span class="em">Standard</span> plugins <a href="#" title="Use any of the standard Open edX plugins" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Shared</span> server <a href="#" title="Enjoy lower cost hosting by sharing resources" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+            </ul>
+            <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">FREE Trial</a> </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well active">
+            <h3 class="title"><span class="em">Shared</span>&nbsp;<span class="fancy">Plus</span> </h3>
+            <p class="price"><span class="currency">$</span> <span class="digits">199</span><span>.95</span> <span class="term">/MO</span></p>
+            <ul class="unstyled points">
+              <li><span class="em">5</span> Course Author Accounts</li>
+              <li><span class="em">10's</span> of Student Accounts</li>
+              <li><span class="em">10</span> Courses</li>
+              <!-- @todo provide a link to what this theme looks like. -->
+              <li><span class="em">Custom</span> theme <a href="#" title="Install your own theme to keep look-n-feel consistent with your brand" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Standard</span> plugins <a href="#" title="Use any of the standard Open edX plugins" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Shared</span> server <a href="#" title="Enjoy lower cost hosting by sharing resources" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+            </ul>
+            <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a> </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well active">
+            <h3 class="title"><span class="em">Dedicated</span></h3>
+            <p class="price"><span class="currency">$</span> <span class="digits">599</span><span>.95</span> <span class="term">/MO</span></p>
+            <ul class="unstyled points">
+              <li><span class="em">Unlimited</span> Author Accounts</li>
+              <li><span class="em">100's</span> of Student Accounts</li>
+              <li><span class="em">Unlimited</span> Courses</li>
+              <!-- @todo provide a link to FAQ about providing a theme, or paying us to make one for you. -->
+              <li><span class="em">Custom</span> theme <a href="#" title="Install your own theme to keep look-n-feel consistent with your brand" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Custom</span> plugins <a href="#" title="Install your own custom plugins to give instructors more options" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Dedicated single</span> server <a href="#" title="Get your own server for more capacity" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+            </ul>
+            <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a> </div>
+        </div>
+        <div class="col-md-3">
+          <div class="well active">
+            <h3 class="title"><span class="em">Dedicated</span>&nbsp;<span class="fancy">Custom</span></h3>
+            <p class="price"><span class="fancy">Call us</span></p>
+            <ul class="unstyled points">
+              <li><span class="em">Unlimited</span> Author Accounts</li>
+              <li><span class="em">1000's</span> of Student Accounts</li>
+              <li><span class="em">Unlimited</span> Courses</li>
+              <li><span class="em">Custom</span> theme <a href="#" title="Install your own theme to keep look-n-feel consistent with your brand" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Custom</span> plugins <a href="#" title="Install your own custom plugins to give instructors more options" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+              <li><span class="em">Dedicated servers</span> <a href="#" title="Get your own cluster of servers for even more capacity" data-toggle="tooltip"><i class="fa fa-question-circle"></i></a></li>
+            </ul>
+            <a class="btn btn-primary">Call us</a> </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <!-- Plan features -->
+        <div class="well well-mini pull-center">
+          <h4 class="inline-el pad-right"><span>All Plans <span class="de-em">Include</span>:</span></h4>
+          <p class="inline-el pad-left muted">30 day money back guarantee <span class="spacer">//</span> 24/7 Customer support <span class="spacer">//</span> Setup assistance <span class="spacer">//</span> Migration help <span class="spacer">//</span> Monitoring &amp; Backups</p>
+        </div>
+      </div>
+    </div>
+  
+    <a name="faq"></a>
+    <div class="row">
+      <div class="col-md-6">
+      <!-- General Questions -->
+            <div class="headline"><h2>Frequently Asked Questions</h2></div>
+            <div class="panel-group acc-v1 margin-bottom-40" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Who is behind this service?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p>Appsembler is a leader in open source educational technology and has been offering hosting services for several other open source software tools. Customers include Wellesley College, College of St. Scholastica, Belmont University.</p>
+                            <p>Appsembler's CEO Nate Aune has been providing  consulting services to MIT, Stanford and edX and has architected large cloud deployments for Harvard and Rice University.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Why Appsembler?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>We have been working with Stanford to explore how to make Open edX more accessible. One of the outcomes of this research is the need for reliable hosting of Open edX.</p>
+                            <p>Why you might choose us as your Open edX hosting partner:</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-check"></i> We're <span class="em">focused on you</span>, the customer, and will do everything we can to make you successful.</li>
+                                <li><i class="fa fa-check"></i> We're <span class="em">experienced</span> in cloud operations and running highly available and production sites.</li>
+                                <li><i class="fa fa-check"></i> We're <span class="em">experts in Django</span>, the web framework that powers Open edX.</li>
+                                <li><i class="fa fa-check"></i> We're <span class="em">committed to Open Source</span> and we're <span class="em">contributors</span> to the Open edX codebase.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                              Can I migrate data from an existing Open edX site?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Yes! We can help you migrate your courses and student data from an existing Open edX site to our hosting service. Contact us to learn more about our migration services.</p>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            How do I change the look-n-feel of the site to match my branding?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>If you'd like your Open edX site to have your logo and colors and other visual elements, you'll need to create a custom theme.</p>
+                            <p>You can either provide us with a custom theme, or we can create one for you. Contact us to learn more about our theming services.</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                How do upgrades work?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>If you're on one of the Shared plans, the upgrades will happen automatically usually on a quarterly basis.</p>
+                            <p>If you're on one of the Dedicated plans, the upgrades can be scheduled at a convenient time for you and your users, usually at the beginning or end of a semester when the site is not being used.</p>                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                What about security updates?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>If there is a security update that needs to be applied, we will do so during one of the regularly scheduled weekly maintenance windows.</p>
+                            <p>If the security update is more urgent, we will send out an email to all users to notify of any scheduled outage. The security updates can usually be applied in a matter of minutes and don't affect users.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                                What is your support policy? Who do I call if there's a problem?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            If you're having a problem, we want to hear about it! You can contact us anytime by phone, email, chat or submit a ticket to our issue tracker system, and we'll respond within 24 hours, usually much faster.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+                            Can I pay with a check instead of credit card? 
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseEight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            While we prefer payment by credit cards because it makes things easier, if this is not an option for you, we can work out an alternative payment method. Contact us to discuss these options.
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+                                How does the free trial work?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseNine" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>We offer a free trial for our Starter plan which lets you try out Open edX, create course content and invite students.</p>
+                            <p>We need to collect your credit card information to prevent abuse, but we won't charge it until after the trial is over.</p>
+                            <p>If after 30 days, you decide that Open edX is not for you, we will delete the course and your credit card won't be charged.</p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+                                If I'm not happy with your service, can you provide an export of my data?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Yes, you can cancel at any time by emailing support@appsembler.com and we will provide a full export of your data, and custom theme (if any).
+                        </div>
+                    </div>
+                </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+                                Is my data secure?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Yes, we do daily backups of all data, so in the event that the data is deleted, we should be able to recover it from the backup.</p>
+                            <p>We use Amazon Web Services (AWS) and you can read about their security features in the <a href="http://aws.amazon.com/security/">AWS Security Center</a>.</p>
+                            <p>We use industry standard SSL encryption for registration and login.</p>
+                            <p>Please contact us if you have any security concerns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+                                Where are your servers located?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>We use <a href="http://aws.amazon.com/">Amazon Web Services (AWS)</a> for hosting Open edX which is the same hosting service that edX.org uses.
+                            <p>All of our Shared Plans are hosted on servers in the U.S.</p>
+                            <p>If you purchase a Dedicated Plan, we can locate your servers in Europe, Asia, South America and in any of the <a href="http://aws.amazon.com/about-aws/globalinfrastructure/">AWS regions.</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+                                Can I use my own AWS account?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThirteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Yes! If you'd like the control of running your own servers, you can use our Appsembler-curated Open edX AMIs, and still benefit from our upgrade and support services.</p>
+                            <p>Please contact us for pricing of this service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen">
+                                Can my users authenticate against (LDAP/Active Directory, Shibboleth, CAS)?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFourteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>If you're on one of our Dedicated plans, we can assist you with setting up authentication to your authentication service.</p>
+                            <p>Please contact us for pricing of this service.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+      
+
+            </div><!--/acc-v1-->
+            <!-- End General Questions -->
+          </div><!-- column -->
+          <div class="col-md-6">
+            <!-- Who's this for? -->
+            <div class="headline"><h2>Who is Open edX for?</h2></div>
+            <div class="panel-group margin-bottom-40" id="who-accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#who-accordion" href="#whoCollapseOne">
+                                Higher education (Colleges, universities) 
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="whoCollapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>In the interest of lowering costs and increasing access to high quality education, educational insitutions are increasingly offering free online courses.</p>
+                            <p>These are known as MOOCs or Massive Open Online Courses, and popular courses can typically attract 50,000 or more students.</p>
+                            <p>Some colleges and universities are experimenting with a hybrid approach in which students still meet in a classroom, but complement their learning with online instruction. These are known as SPOCs or Small Private Online Courses and will typically have much fewer enrolled students than MOOCs.</p>
+                            <p>Open edX can be used to offer either MOOCs or SPOCs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#who-accordion" href="#whoCollapseTwo">
+                                Continuing education and professional development 
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="whoCollapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Open edX offers a compelling platform for offering online courses for adult learners who are seeking professional development.</p>
+                            <p>Adult learners can learn at their own pace, and get support from other learners in online forums that Open edX provides for each course.</p>
+                            <p>Open edX's peer grading feature allows students to grade each others' work and learn from each other.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#who-accordion" href="#whoCollapseThree">
+                                Corporate training 
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="whoCollapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>Open edX is an excellent platform for companies to deliver online courses to their employees, customers, partners or potential hires.</p>
+                            <p>By offering courses online, companies can lower costs and provide better assessment of whether employees are actually learning the material.</p>
+                            <p>Online courses can also provide an additional revenue stream.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+          </div>
+    </div><!-- /row -->
+ 
+    <!--Customer testimonial-->
+    <div class="block testimonials margin-top-large">
+      <h2 class="title-divider"><span>Highly <span class="de-em">Recommended</span></span> <small>You're going to love our service, but don't take our word for it!</small></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote>
+            <p>"It's totally awesome, we couldn't imagine life without it!"</p>
+            <small><img src="img/testimonials/sefface5_bigger.JPG" alt="Sef Kloninger" class="img-circle" /> Sef Kloninger <span class="spacer">/</span> <a href="http://online.stanford.edu">Engineering Mgr, Stanford Online</a></small> </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote>
+            <p>"10 out of 10, highly recommended!"</p>
+            <small><img src="img/testimonials/rob-rubin.jpg" alt="Rob Rubin" class="img-circle" /> Rob Rubin <span class="spacer">/</span> <a href="https://www.edx.org">VP Engineering, edX</a></small> </blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote>
+            <p>"Our students and faculty are overjoyed with the Open edX hosting provided by Appsembler."</p>
+            <small><img src="img/testimonials/peter-pinch.jpg" alt="Peter Pinch" class="img-circle" /> Peter Pinch <span class="spacer">/</span> <a href="http://ocw.mit.edu/">OpenCourseware, MIT</a></small> </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="content-below" class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="upsell"> <small class="muted">30 day money back guarantee <span class="spacer">//</span> 24/7 Customer support <span class="spacer">//</span> Setup assistance <span class="spacer">//</span> Migration help <span class="spacer">//</span> Monitoring &amp; Backups</small> <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Start your Free Trial Today! <i class="fa fa-arrow-right"></i></a> </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col">
+        <div class="block contact-block"> 
+          <!--@todo: replace with company contact details-->
+          <h3>Contact Us</h3>
+            <address>
+            <p><abbr title="Phone"><i class="fa fa-phone"></i></abbr> 1-(855) 352-6469</p>
+            <p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> info@appsembler.com</p>
+            <p><abbr title="Address"><i class="fa fa-home"></i></abbr> Boston, MA</p>
+            </address>
+        </div>
+      </div>
+      <div class="col-md-5 col">
+        <div class="block">
+          <h3>About Appsembler</h3>
+          <p>Bringing the best in open source educational technology to you! We make it easy to get started and provide ongoing support and reliable hosting.</p>
+          <a href="#" class="btn btn-sm btn-primary">Find out more</a>
+        </div>
+      </div>
+      <div class="col-md-4 col">
+        <div class="block newsletter">
+          <h3>Newsletter</h3>
+          <p>Stay up to date with the latest Open edX news and upgrade announcements by signing up to our newsletter.</p>
+          <!--@todo: replace with mailchimp code-->
+          <form role="form">
+            <div class="input-group input-group-sm">
+              <label class="sr-only" for="email-field">Email</label>
+              <input type="text" class="form-control" id="email-field" placeholder="Email">
+              <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">Go!</button>
+              </span> </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="toplink"><a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a></div>
+      <div class="subfooter">
+        <div class="col-md-9">
+        <!--social media icons-->
+            <div class="social-media">  
+              <a href="http://twitter.com/appsembler"><i class="fa fa-twitter"></i></a> <a href="http://facebook.com/appsembler"><i class="fa fa-facebook"></i></a> <a href="http://www.linkedin.com/company/2554095"><i class="fa fa-linkedin"></i></a> <a href="https://plus.google.com/b/112932878675225886349/112932878675225886349/"><i class="fa fa-google-plus"></i></a> 
+            </div>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-inline footer-menu">
+            <li>Copyright 2014 &copy; <a href="http://appsembler.com">Appsembler</a></li>
+            <li><a href="http://appsembler.com/terms-of-use">Terms</a></li>
+            <li><a href="http://appsembler.com/privacy-policy">Privacy</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude"> 
+  <!--@modal - signup modal-->
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" role="form">
+            <h5>Price Plan</h5>
+            <select class="form-control">
+              <option>Shared Starter ($49.95/mo)</option>
+              <option>Shared Plus ($199.95/mo)</option>
+              <option>Dedicated ($599.95/mo)</option>
+              <option>Dedicated Custom</option>
+            </select>
+            <h5>Account Information</h5>
+            <div class="form-group">
+              <label class="sr-only" for="signup-first-name">First Name</label>
+              <input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-last-name">Last Name</label>
+              <input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-username">Phone</label>
+              <input type="text" class="form-control" id="signup-phone" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-email">Email address</label>
+              <input type="email" class="form-control" id="signup-email" placeholder="Email address">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="term">
+                I agree with the Terms and Conditions. </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer"> <small>Not sure which plan to choose? <a href="#">Contact us!</a>.</small> </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+  
+  <!--@modal - login modal-->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form action="login.htm" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="login-email">Email</label>
+              <input type="email" id="login-email" class="form-control email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="login-password">Password</label>
+              <input type="password" id="login-password" class="form-control password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small><br />
+          <small><a href="#">Forgotten password?</a></small> </div>
+      </div>
+      <!-- /.modal-content --> 
+    </div>
+    <!-- /.modal-dialog --> 
+  </div>
+  <!-- /.modal --> 
+</div>
+
+<!--Scripts --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery-migrate-1.2.1.min.js"></script> <!--Legacy jQuery support for quicksand plugin--> 
+
+<!-- Bootstrap JS --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!--JS plugins--> 
+<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
+<script src="plugins/clingify/jquery.clingify.min.js"></script> 
+<script src="plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script> 
+<script src="plugins/jRespond/js/jRespond.js"></script> 
+<script src="plugins/quicksand/jquery.quicksand.js"></script> 
+
+<!--Custom scripts mainly used to trigger libraries --> 
+<script src="js/script.min.js"></script>
+</body>
+</html>
