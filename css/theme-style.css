@@ -4956,6 +4956,8 @@ a:hover .icon-inverse-80 {
   animation-delay: 2s;
   -webkit-animation-delay: 2s;
 }
+
+/*
 .navbar-nav,
 #main-menu {
   float: none;
@@ -5081,6 +5083,10 @@ a:hover .icon-inverse-80 {
   margin: 10px -8px 0 -8px;
   padding: 0;
 }
+
+
+
+
 #jPanelMenu-menu {
   background-color: #1b1b1b;
   background-image: url(../img/bg_noise-2.png);
@@ -5290,6 +5296,7 @@ a:hover .icon-inverse-80 {
     border-top-color: #ffffff;
   }
 }
+*/
 .nav .caret {
   border-top-color: #55a79a;
   border-bottom-color: #55a79a;
@@ -5749,6 +5756,7 @@ a:hover .icon-inverse-80 {
   height: 0;
   overflow: hidden;
 }
+/*
 .navbar {
   color: #eeeeee;
   color: rgba(255, 255, 255, 0.7);
@@ -5906,6 +5914,8 @@ a:hover .icon-inverse-80 {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+*/
 .social-media a {
   text-decoration: none;
   color: #eeeeee;
